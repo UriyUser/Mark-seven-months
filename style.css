@@ -1,6 +1,4 @@
 body {
-    /* height: 100vh; */
-    /* background: linear-gradient(to bottom, #29B6F6, #05f0ec); */
     background: url(img/Wroclaw.jpeg) no-repeat;
     background-size: contain;
     overflow-x: hidden;
@@ -95,18 +93,10 @@ marquee {
     font-size: 30px;
     font-weight: bold;
     font-style: italic;
-    /* background: #fff; */
     color: #ebe2e8;
     bottom: 105px;
     left: 0;
 }
-/* #k {
-    position: absolute;
-    width: 1280px;
-    bottom: 50px;
-    left: 0;
-    z-index: -1;
-} */
 p {
     position: absolute;
     color: #fff;
