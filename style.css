@@ -1,0 +1,115 @@
+body {
+    /* height: 100vh; */
+    /* background: linear-gradient(to bottom, #29B6F6, #05f0ec); */
+    background: url(img/Wroclaw.jpeg) no-repeat;
+    background-size: contain;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+.sprite-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.sprite-image {
+    width: 68.2px;
+    height: 80px;
+    background: url(img/spriteRunRight.png) 0px 0px;
+    animation: play 0.8s steps(30) infinite,
+               step 30s linear infinite;
+    position: absolute;
+    left: -80px;
+    bottom: 150px;
+    z-index: 1;
+}
+@keyframes play {
+    100% {
+        background-position: -2046px;
+    }
+}
+@keyframes step {
+    100% {
+        left: 100%;
+    }
+}
+audio {
+    position: absolute;
+    height: 20px;
+    width: 200px;
+    bottom: 20px;
+    right: 120px;
+}
+.road {
+    position: absolute;
+    width: 1280px;
+    height: 100px;
+    left: 0;
+    bottom: 134px;
+    background: #585a5e;
+    z-index: -1;
+}
+.p-a {
+    position: absolute;
+    width: 1280px;
+    height: 2px;
+    left: 0;
+    bottom: 184px;
+    background: #fff;
+    z-index: -1;
+}
+.ground {
+    position: absolute;
+    width: 1280px;
+    height: 150px;
+    bottom: -16px;
+    left: 0;
+    background: #409629;
+    z-index: -2;
+}
+img {
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+.cloud {
+    width: 196px;
+    height: 99px;
+    background: url(img/cloud.png) no-repeat;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    animation: clouds 48s linear infinite;
+    transform: translateX(650%);
+}
+@keyframes clouds {
+    100% {
+        transform:  translateX(-100%);
+    }
+}
+.cloud2 {
+    top: 90px;
+    animation: clouds 46s linear infinite;
+}
+marquee {
+    position: absolute;
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+    /* background: #fff; */
+    color: #ebe2e8;
+    bottom: 105px;
+    left: 0;
+}
+/* #k {
+    position: absolute;
+    width: 1280px;
+    bottom: 50px;
+    left: 0;
+    z-index: -1;
+} */
+p {
+    position: absolute;
+    color: #fff;
+    font-size: 30px;
+    top: -20px;
+}
