@@ -74,7 +74,7 @@ img {
     height: 99px;
     background: url(img/cloud.png) no-repeat;
     position: absolute;
-    top: 50px;
+    top: 5px;
     left: 0;
     animation: clouds 48s linear infinite;
     transform: translateX(650%);
@@ -85,7 +85,7 @@ img {
     }
 }
 .cloud2 {
-    top: 90px;
+    top: 40px;
     animation: clouds 46s linear infinite;
 }
 marquee {
@@ -97,9 +97,23 @@ marquee {
     bottom: 105px;
     left: 0;
 }
-p {
+h1 {
     position: absolute;
-    color: #fff;
-    font-size: 30px;
-    top: -20px;
+    color: #111;
+    font-size: 8vw;
+    top: -10px;
+    background: linear-gradient(45deg, #f00, #f0f, #ff0, #00f, #0ff, #0f0);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-stroke: .1rem transparent;
+    background-size: 500%;
+    animation: text 5s linear infinite;
+}
+@keyframes text {
+    0% {
+        background-position: left;
+    }
+    100% {
+        background-position: right;
+    }
 }
