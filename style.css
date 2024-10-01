@@ -1,6 +1,5 @@
 body {
-    background: url(img/Wroclaw.jpeg) no-repeat;
-    background-size: contain;
+    background: #E0FFFF;
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -17,7 +16,7 @@ body {
                step 30s linear infinite;
     position: absolute;
     left: -80px;
-    bottom: 150px;
+    bottom: 10px;
     z-index: 1;
 }
 @keyframes play {
@@ -34,15 +33,15 @@ audio {
     position: absolute;
     height: 20px;
     width: 200px;
-    bottom: 20px;
+    bottom: -15px;
     right: 120px;
 }
 .road {
     position: absolute;
     width: 1280px;
-    height: 100px;
+    height: 80px;
     left: 0;
-    bottom: 134px;
+    bottom: 4px;
     background: #585a5e;
     z-index: -1;
 }
@@ -51,30 +50,36 @@ audio {
     width: 1280px;
     height: 2px;
     left: 0;
-    bottom: 184px;
+    bottom: 44px;
     background: #fff;
     z-index: -1;
 }
 .ground {
     position: absolute;
     width: 1280px;
-    height: 150px;
+    height: 20px;
     bottom: -16px;
     left: 0;
     background: #409629;
     z-index: -2;
 }
-img {
+#k {
     position: absolute;
-    top: 50px;
-    right: 50px;
+    width: 1275px;
+    top: 150px;
+    left: 0;
+}
+#g {
+    position: absolute;
+    left: 5px;
+    top: 15px;
 }
 .cloud {
     width: 196px;
     height: 99px;
     background: url(img/cloud.png) no-repeat;
     position: absolute;
-    top: 5px;
+    top: 30px;
     left: 0;
     animation: clouds 48s linear infinite;
     transform: translateX(650%);
@@ -85,7 +90,7 @@ img {
     }
 }
 .cloud2 {
-    top: 40px;
+    top: 80px;
     animation: clouds 46s linear infinite;
 }
 marquee {
@@ -93,15 +98,15 @@ marquee {
     font-size: 30px;
     font-weight: bold;
     font-style: italic;
-    color: #ebe2e8;
-    bottom: 105px;
+    color: #3117f9;
+    top: 115px;
     left: 0;
 }
 h1 {
     position: absolute;
     color: #111;
     font-size: 8vw;
-    top: -10px;
+    top: 80px;
     background: linear-gradient(45deg, #f00, #f0f, #ff0, #00f, #0ff, #0f0);
     background-clip: text;
     -webkit-background-clip: text;
